@@ -320,3 +320,38 @@ ul {
 /* ie CSS file */
 .cf {
   zoom: 1; }
+
+body {
+  position: relative; }
+
+.sky {
+  background-color: #70cacb;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 33.3333%;
+  right: 0;
+  left: 0;
+  margin: auto; }
+
+.grass {
+  background-color: #a2d5af;
+  width: 100%;
+  position: fixed;
+  top: 66.6667%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto; }
+
+#cowContainer {
+  position: fixed;
+  top: 20%;
+  bottom: 20%;
+  right: 10%;
+  left: auto;
+  margin: auto; }
+
+#cowAndBalloons {
+  width: auto;
+  height: 100%; }
