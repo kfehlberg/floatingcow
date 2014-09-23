@@ -1,18 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="110" height="280" viewBox="0 0 110 240" preserveAspectRatio="xMaxYmin meet" version="1.1" xml:space="preserve">
   <defs>
     <g id="defballoon">
-      <!-- <path id="defballoonshape" opacity="0.8" d="M0 45c-10 0-17 6-17 18 0 9 9 20 15 23 2 1-3 4 2 4s0-3 2-4c6-3 15-14 15-23C17 6 10 0 0 0z"/> -->   
       <path id="defballoonshape" opacity="0.8" d="M0 45c5 0 0 -3 2 -4 6-3 15-14 15-23 0-12-7-18-17-18-10 0-17 6-17 18 0 9 9 20 15 23 2 1-3 4 2 4z"/>
       <ellipse id="defballoontie" cx="0" cy="42" rx="3" ry="1" opacity="1" fill="#A6A8AB"/>
     </g>
-    <path id="defhoove"/>
   </defs>
   <g id="floatingCowAll">
     <ellipse id="shadow" cx="62" cy="232" rx="26" ry="4" opacity="0.4" fill="#58595B">
       <animate id="dropWidenShadow" attributeType="XML" attributeName="rx" begin="balloon5.click" from="0" to="5" dur="1s" additive="sum" repeatCount="1" fill="freeze"/>
-
       <animate id="dropDarkenShadow" attributeType="XML" attributeName="opacity" begin="balloon5.click" from="0" to="0.2" dur="1s" additive="sum" repeatCount="1" fill="freeze"/>
-
       <animate id="bobWidenShadow" attributeType="XML" attributeName="rx" begin="0s;" values="0;2;0" dur="3s" additive="sum" repeatCount="indefinite" fill="freeze"/>
       <animate id="bobDarkenShadow" attributeType="XML" attributeName="opacity" begin="0s" values="0;0.1;0" dur="3s" additive="sum" repeatCount="indefinite" fill="freeze"/>
     </ellipse>
@@ -53,24 +49,15 @@
       <path id="earlineRight" fill="#58595B" d="M19.493 137.973c-1.62-2.268-4.181-3.445-6.847-3.136 2.549-0.59 5.288 0.178 7.338 1.954L19.493 137.973z"/>
       <path id="stringsAroundCow" fill="#A6A8AB" d="M61 135Q70 160 55 182 53 183 52 182 64 158 59 135 60 132 61 135z"/>
       <g id="balloon5">
-        <use xlink:href="#defballoon" transform="translate(57 5)rotate(-3)" fill="#C24498"> 
-      <!--           <animateTransform id="balloon5Swell" attributeType="XML" attributeName="transform" begin="mouseover" end="mouseout" type="scale" values="1;1.5;1;" additive="sum" /> -->    
-        </use>
-        <path id="balloon5sting" stroke="#A6A8AB" d="M60 46C64 53 65 98 60 133 67 56 60 46 60 46z"></path>
+        <use xlink:href="#defballoon" transform="translate(57 5)rotate(-3)" fill="#C24498"/>
+        <path id="balloon5sting" stroke="#A6A8AB" d="M60 46C64 53 65 98 60 133 67 56 60 46 60 46z"/>
         <animateTransform id="balloonPopMove" attributeType="XML" attributeName="transform" begin="click" type="translate" values="0,0;50,-20;60,-10;70,400" additive="sum" dur="2s" fill="freeze" repeatCount="1"/>
         <animateTransform id="balloonPopShrink" attributeType="XML" attributeName="transform" begin="click" type="scale" from="1" to="0" additive="sum" dur="2s" fill="freeze" repeatCount="1"/>
         <animateTransform id="balloonPopRotate" attributeType="XML" attributeName="transform" begin="click" type="rotate" values="0 60 133;10 60 133;0 60 133;-180 60 133;90 60 133" additive="sum" dur="2s" fill="freeze" repeatCount="indefinite" />
-<!--         <animateTransform id="balloonPopWiggle" attributeType="XML" attributeName="transform" begin="click" type="rotate" values="0 60 133;-15 60 133;0 60 133;15 60 133" additive="sum" dur="2s" fill="freeze" repeatCount="indefinite" /> -->
-        
-<!--         <animateMotion id="balloonFloatAway" dur="2s" additive="sum" repeatCount="1" begin="balloon5.click" fill="freeze">
-          <mpath stroke="#00ff00" fill="none" stroke-opacity="0" d="M56 4c-10-15-20 10-40-10"/>
-        </animateMotion> -->
       </g>
       <g id="balloon4">
-        <use xlink:href="#defballoon" transform="translate(26 20) rotate(-6)" fill="#C24498">
-        </use>
-        <path id="balloon4sting" stroke="#A6A8AB" d="M60 133C60 98 36 83 32 62 C36 83 60 98 60 133z">  
-        </path>
+        <use xlink:href="#defballoon" transform="translate(26 20) rotate(-6)" fill="#C24498"/>
+        <path id="balloon4sting" stroke="#A6A8AB" d="M60 133C60 98 36 83 32 62 C36 83 60 98 60 133z"/>
         <animateTransform id="moveInBalloon4" attributeType="XML" attributeName="transform" begin="balloon5.click" type="rotate" dur="1.5s" values="0 60 133;6 60 133;5 60 133;6 60 133" additive="sum" fill="freeze" /> 
       </g>
       <g id="balloon3">
