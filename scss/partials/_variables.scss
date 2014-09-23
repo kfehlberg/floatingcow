@@ -1,8 +1,15 @@
 //==============================================
 // COLOR VARIABLES
 //==============================================
+//==============================================
+// COLOR VARIABLES
+//==============================================
     $skyblue: rgb(112, 202, 203) ;
-    $grassgreen: rgb(162, 213, 175) ;
+    $green: rgb(162, 213, 175) ; //A2D5AF
+    	$grassgreen: darken( $green, 20% ) ;
+    	$darkgrassgreen: darken( $green, 30% ) ;
+
     $pink: rgb(247, 171, 191) ;
     $accent1: rgb(195, 69, 153) ;
     $accent2: rgb(11, 153, 153) ;
+	$cloudColor: white ;

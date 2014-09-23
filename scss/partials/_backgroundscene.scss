@@ -1,27 +1,17 @@
-body {
-    position: relative;
-}
-
-.sky {
-    background-color: $skyblue;
+html, body {
+    height: 100%;
     width: 100%;
+}
+div {
+    display: block;
+}
+.sky {
+    z-index: 0;
+    background-color: $skyblue;
     position: fixed;
     top: 0;
-    bottom: 33.3333%;
-    right: 0;
-    left: 0;
-    margin: auto;
-}
-
-.grass {
-    background-color: $grassgreen;
-    width: 100%;
-    position: fixed;
-    top: 66.6667%;
     bottom: 0;
     right: 0;
     left: 0;
     margin: auto;
 }
-
-//#fence{}

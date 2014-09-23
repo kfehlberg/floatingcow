@@ -1,0 +1,43 @@
+$cloudHeight: 6vmin;
+
+%cloud {
+    z-index: 1;
+    background: $cloudColor;
+    position: fixed;
+    right: auto;
+    bottom: auto;
+    width: $cloudHeight * 3.5;
+    height: $cloudHeight;
+    border-radius: $cloudHeight;
+    &:before, &:after {
+        z-index: 1;
+        content: '';
+        position: absolute;
+        background: $cloudColor;
+        border-radius: $cloudHeight;
+    }
+    &:before {
+        width: $cloudHeight * 2;
+        height: $cloudHeight * 2;
+        top: - $cloudHeight;
+        left: $cloudHeight / 2;   
+    }
+    &:after {
+        width: $cloudHeight;
+        height: $cloudHeight;
+        top: - $cloudHeight / 2;
+        right: $cloudHeight / 2;
+    }
+}
+
+#cloudOne {
+    @extend %cloud;
+    top: 12vmin;
+    left: 8vmin;
+}
+#cloudTwo {
+    @extend %cloud;
+    transform: scale(.5);
+    top: 25vmin;
+    left: 25vmin;
+}

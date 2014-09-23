@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,20 +8,25 @@
         <meta name="author" content="Katie Fehlberg" />
         <meta name="copyright" content="***" />  
         <!--Stylesheet-->
-        <link href="/css/main.css" media="screen, projection" rel="stylesheet" type="text/css" />
+        <link href="css/main.css" media="screen, projection" rel="stylesheet" type="text/css" />
     </head>
     <body>
         <div class="sky"></div>
-        <div class="grass"></div>
-        <div id="cowContainer">
-            <div id="cowAndBalloons"></div>
-        </div>
-
+        <div id="cloudOne"></div>
+        <div id="cloudTwo"></div>
+        <div id="hillFront"> </div>
+        <div id="hillBack"> </div>
+        <!-- <div id="cowContainer"> -->
+        <object id="cow-svg" type="image/svg+xml" data="images/floatingCowOpt.svg">Your browser does not support SVG
+            <!--following allows object to work in later versions of IE according to http://www.w3.org/Graphics/SVG/IG/resources/svgprimer.html#SVG_in_HTML-->
+            <param name="src" value="images/floatingCowOpt.svg">
+        </object>
+        <!-- </div> -->
         <!--Google CDN for jQuery --> 
-         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/floatingcow.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="http://modernizr.com/downloads/modernizr-latest.js" type="text/javascript"></script>
     <!--    <script type="text/javascript" src="js/modernizr.js"></script>-->
         <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
-        <script type="text/javascript" src="js/floatingcow.js"></script>
     </body>
 </html>

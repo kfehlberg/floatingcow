@@ -1,0 +1,24 @@
+%hill {
+    position: fixed;
+    bottom: 0;
+    top: 66.6667%;
+    margin: auto;
+}
+#hillBack {
+    @extend %hill;
+    z-index: 1;
+    background-color: $darkgrassgreen;
+    right: auto ;
+    left: 0 ;
+    width: 80% ;
+    border-radius: 0 100% 0 0;
+}
+#hillFront {
+    @extend %hill;
+    z-index: 2;
+    background-color: $grassgreen;
+    right: 0;
+    left: auto;
+    width: 110%;
+    border-radius: 100% 0 0 0;
+}
