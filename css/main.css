@@ -52,8 +52,8 @@ footer a { display: inline-block; text-align: center; }
 
 #hillBack, #hillFront { position: fixed; bottom: 0; top: 66.6667%; margin: auto; }
 
-#hillBack { z-index: 1; background-color: #45995a; right: auto; left: 0; width: 80%; border-radius: 0 100% 0 0; }
+#hillBack { z-index: 1; background-color: #65ac77; right: auto; left: 0; width: 80%; border-radius: 0 100% 0 0; }
 
-#hillFront { z-index: 2; background-color: #5cb573; right: 0; left: auto; width: 110%; border-radius: 100% 0 0 0; }
+#hillFront { z-index: 2; background-color: #48a05f; right: 0; left: auto; width: 110%; border-radius: 100% 0 0 0; }
 
 #cow-svg { z-index: 3; position: fixed; right: 10%; left: auto; top: 0; bottom: 0; height: 100%; margin: 0 auto; }
