@@ -1,7 +1,16 @@
 //==============================================
+// FONT VARIABLES
+//==============================================
+	$primaryFontFamily: "Trebuchet MS", "Gill Sans", "Gill Sans MT", Verdana, sans-serif;
+
+//==============================================
 // SIZE VARIABLES
 //==============================================
+	$footerHeight: 3.5rem;
 	$cloudHeight: 6vmin;
+
+	$footerFSize: 0.875rem;
+	$buttonFSize: 1.125rem;
 //==============================================
 // COLOR VARIABLES
 //==============================================
@@ -9,9 +18,26 @@
     $green: hsl(135, 38%, 74%) ;//rgb(162, 213, 175) ; 
     	$baseGrassGreen: darken( $green, 20% ) ;
 	    	$darkGrassGreen: darken( $baseGrassGreen, 8% ) ;
+	    		$darkerGrassGreen: darken( $darkGrassGreen, 8% ) ;
 	    	$dullGrassGreen: desaturate( $baseGrassGreen, 8% ) ;
     $pink: rgb(247, 171, 191) ;
     $accent1: rgb(195, 69, 153) ;
     $accent2: rgb(11, 153, 153) ;
-	$cloudColor: hsl(360, 100%, 100%) ;
+    $white: hsl(360, 100%, 100%) ;
+	$cloudColor: $white ;
 		$dullCloudColor: hsl(60, 17%, 90%) ;
+	$lightGray: hsl(216, 3%, 66%) ;
+	$mediumGray: hsl(220, 2%, 35%) ;
+	$darkGray: hsl(240, 1%, 25%) ;
+		// $transparentDarkGray: transparentize( $darkGray, 0.4 ) ;
+	//-----------------------------------
+	// APPLIED COLOR VARIABLES
+	//-----------------------------------
+		//*** font colors ***
+		$buttonFontColor: $darkGray;
+			$buttonHoverFontColor: $white ;
+		$footerFontColor: $darkGray;
+		//*** backgrond colors ***
+		$buttonBgColor: $skyblue;
+			$buttonHoverBgColor: $accent1;
+		$footerBgColor: $darkerGrassGreen;
