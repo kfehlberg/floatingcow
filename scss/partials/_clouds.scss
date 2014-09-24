@@ -1,8 +1,12 @@
-$cloudHeight: 6vmin;
-
+%cloudColor {
+    background: $cloudColor;
+}
+%dullCloudColor {
+    background: $dullCloudColor;
+}
 %cloud {
     z-index: 1;
-    background: $cloudColor;
+    // background: $cloudColor;
     position: fixed;
     right: auto;
     bottom: auto;
@@ -13,7 +17,7 @@ $cloudHeight: 6vmin;
         z-index: 1;
         content: '';
         position: absolute;
-        background: $cloudColor;
+        // background: $cloudColor;
         border-radius: $cloudHeight;
     }
     &:before {
@@ -32,12 +36,22 @@ $cloudHeight: 6vmin;
 
 #cloudOne {
     @extend %cloud;
+    @extend %cloudColor;
+    // background: $cloudColor;
     top: 12vmin;
     left: 8vmin;
+    &:before, &:after {
+       @extend %cloudColor;
+    }
 }
 #cloudTwo {
     @extend %cloud;
+    @extend %dullCloudColor;
     transform: scale(.5);
     top: 25vmin;
     left: 25vmin;
+    &:before, &:after {
+       @extend %dullCloudColor;
+    }
+
 }

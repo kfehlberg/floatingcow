@@ -1,15 +1,17 @@
 //==============================================
-// COLOR VARIABLES
+// SIZE VARIABLES
 //==============================================
+	$cloudHeight: 6vmin;
 //==============================================
 // COLOR VARIABLES
 //==============================================
     $skyblue: rgb(112, 202, 203) ;
-    $green: rgb(162, 213, 175) ; 
+    $green: hsl(135, 38%, 74%) ;//rgb(162, 213, 175) ; 
     	$baseGrassGreen: darken( $green, 20% ) ;
 	    	$darkGrassGreen: darken( $baseGrassGreen, 8% ) ;
 	    	$dullGrassGreen: desaturate( $baseGrassGreen, 8% ) ;
     $pink: rgb(247, 171, 191) ;
     $accent1: rgb(195, 69, 153) ;
     $accent2: rgb(11, 153, 153) ;
-	$cloudColor: white ;
+	$cloudColor: hsl(360, 100%, 100%) ;
+		$dullCloudColor: hsl(60, 17%, 90%) ;
