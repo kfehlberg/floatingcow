@@ -1,0 +1,65 @@
+$button-color: $pink;
+
+%border-box {
+	box-sizing: border-box;
+}
+%link{
+    text-decoration: none;
+    &:hover{cursor: pointer;}
+}
+%button{
+	@extend %border-box;
+    background: $button-color;;
+    border: 1px solid $button-color;
+	border-radius: 5px;
+	padding: .25em .5em;  
+    &:hover{
+        background-color: mix(black, $button-color, 15%);
+		border-color: mix(black, $button-color, 40%);
+        cursor: pointer;
+    }
+}
+
+footer {
+	@extend %border-box;
+	// display: block;
+	background: $accent1;
+	z-index: 5;
+	position: fixed;
+	top: auto;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	height: 3em;
+	line-height: 1.45;
+	padding: .5em;
+	// padding: .5em;
+}
+footer ul {
+	// display: inline-block;
+	height: 3.25em;
+	// width: 100%;
+	// position: fixed;
+	// right: 0;
+	// bottom: 0;
+}
+footer ul li {
+	// float: right;
+	display: inline-block;
+	text-align: right;
+	&:nth-child(n) {
+		padding: .25em .5em;
+	}
+	&:last-child {
+		position: absolute;
+		right: .25em;
+		bottom: .25em;
+	}
+}
+
+footer a {
+	@extend %link;
+	@extend %button;
+	display: inline-block;
+	text-align: center;
+}

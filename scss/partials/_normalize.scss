@@ -37,16 +37,16 @@ body {
 //details,
 //figcaption,
 //figure,
-// footer,
+footer,
 // header,
 // //hgroup,
 // //main,
 // nav
 // //section,
 // //summary 
-// {
-//   display: block;
-// }
+{
+  display: block;
+}
 ///**
 // * 1. Correct `inline-block` display not defined in IE 8/9.
 // * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
@@ -429,13 +429,13 @@ svg:not(:root) {
 // Lists -added by KF
 //    ==========================================================================
 
-// /*  Remove default list styles, margins, and padding.*/
-// ol,
-// ul{
-//     margin:0;
-//     padding:0;
-//     list-style: none;
-// }
+/*  Remove default list styles, margins, and padding.*/
+ol,
+ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
 // /* CLEAR FIX -added by KF
 //    ========================================================================== */
 //     /* Global CSS file  */
