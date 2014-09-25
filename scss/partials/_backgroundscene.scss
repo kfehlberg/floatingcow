@@ -2,6 +2,11 @@ html, body {
     height: 100%;
     width: 100%;
 }
+@include mq-small-max {
+    html {
+        font-size: 75%;
+    }
+}
 div {
     display: block;
 }
