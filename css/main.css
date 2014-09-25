@@ -159,7 +159,7 @@ footer a {
   z-index: 3;
   position: fixed;
   right: 0;
-  left: auto;
+  left: 0;
   top: 0;
   bottom: 2.75rem;
   margin: auto; }
